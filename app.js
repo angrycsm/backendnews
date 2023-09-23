@@ -1,8 +1,8 @@
-import express from 'express'
-const app = express()
+import express from 'express';
+import userRoute from './src/routes/user.route.js';
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+
+app.use('/soma', userRoute);
 
 app.listen(3000)
