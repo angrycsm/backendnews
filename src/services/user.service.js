@@ -1,3 +1,7 @@
 import User from "../models/User.js";
 
-export const create = (body) => User.crete(body);
+const createService = (body) => User.create(body);
+
+export default {
+  createService,
+};
