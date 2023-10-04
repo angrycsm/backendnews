@@ -24,5 +24,5 @@ export default {
   createService,
   findAllService,
   findByIdService,
-  updateService
+  updateService,
 };
