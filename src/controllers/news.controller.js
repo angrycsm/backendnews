@@ -14,10 +14,10 @@ const create = async (req, res) => {
       title,
       text,
       banner,
-      user: { _id: "" },
+      user: req.userId,
     });
 
-    res.stauts(201).send({ message: "Post Created" });
+    res.status(201).send({ message: "Post Created" });
   } catch (err) {
     res.status(500).send({ message: err.message });
   }
